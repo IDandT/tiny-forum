@@ -1,0 +1,32 @@
+.topic-row {
+  display: flex;
+  flex-direction: row;
+  background-color: #e5f1f9;
+  color: #0372be;
+  align-items: center;
+  font-size: medium;
+  font-weight: bolder;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid lightgray;
+}
+
+.topic-row:hover {
+  background-color: #f7eed2;
+}
+
+.topic-desc {
+  font-weight: normal;
+  font-size: small;
+  color: black;
+}
+
+.topic-col-1 {
+  text-align: left;
+  flex: 1;
+}
+
+.topic-col-2 {
+  min-width: 100px;
+  flex: 0.25;
+}

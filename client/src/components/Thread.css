@@ -1,0 +1,32 @@
+.thread {
+  background-color: #e5f1f9;
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 700px;
+}
+
+.thread-content {
+  background-color: #e5f1f9;
+  border: 1px solid white;
+  padding: 20px;
+}
+
+.post-editor {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+button {
+  background-color: #e5f1f9;
+  border: 2px solid #0372be;
+  border-radius: 5px;
+  font-weight: bolder;
+  padding: 10px 20px;
+}
+button:hover {
+  background-color: lightblue;
+}
+button:active {
+  background-color: #0372be;
+}

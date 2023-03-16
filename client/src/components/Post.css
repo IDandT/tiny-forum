@@ -1,0 +1,51 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+  width: auto;
+}
+
+.simple-linear {
+  background: linear-gradient(#e5f1f9, white);
+}
+
+.topbar {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.user-avatar {
+  margin: 10px;
+}
+
+.user-name {
+  font-weight: bolder;
+}
+
+.datetime {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: small;
+  font-weight: bolder;
+  margin: 0px 10px;
+}
+
+.date {
+  margin: 5px 0px;
+}

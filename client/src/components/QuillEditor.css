@@ -1,0 +1,45 @@
+.qre-container {
+  background-color: white;
+  color: black;
+  flex-direction: column;
+  padding: 5px;
+  width: 600px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 5px 5px black;
+}
+
+.qre-editor {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.qre-button {
+  margin-top: 5px;
+}
+
+.ql-container.ql-snow {
+  background-color: white;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.ql-toolbar.ql-snow {
+  background-color: #eee;
+  border: 1px solid black;
+}
+
+.ql-tooltip {
+  left: 0 !important;
+}

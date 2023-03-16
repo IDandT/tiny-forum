@@ -1,0 +1,17 @@
+.location-header {
+  background-color: #1675bc;
+  color: white;
+  font-size: large;
+  font-weight: bolder;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom: none;
+  display: flex;
+  align-items: center;
+  padding: 2px 15px;
+  gap: 5px;
+}
+
+.location-part {
+  color: white;
+}
