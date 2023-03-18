@@ -28,3 +28,6 @@ dist-ssr
 
 # Static uploaded avatar files
 server/avatars/*
+
+#file exception
+!.gitkeep
