@@ -43,3 +43,9 @@
 .ql-tooltip {
   left: 0 !important;
 }
+
+.post-error-message {
+  color: red;
+  font-weight: bold;
+  margin: 20px 0px 10px 0px;
+}

@@ -8,10 +8,14 @@
   border-bottom: none;
   display: flex;
   align-items: center;
-  padding: 2px 15px;
+  padding: 2px 22px;
   gap: 5px;
 }
 
 .location-part {
   color: white;
+  color: #1675bc;
+  background-color: white;
+  padding: 0px 10px;
+  border-radius: 5px;
 }

@@ -1,13 +1,14 @@
-USE `idandt_tinyforum`;
+USE idandt_tinyforum;
 
-CREATE TABLE `users` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `username` VARCHAR(25) NOT NULL,
-  `is_admin` TINYINT NOT NULL,
-  `avatar` VARCHAR(255) NULL,
-  `disabled` TINYINT GENERATED ALWAYS AS (false),
-  PRIMARY KEY (`id`));
+DROP TABLE IF EXISTS users;
 
-INSERT INTO `users` (`id`, `username`, `is_admin`, `avatar`) VALUES (1, "Admin", true, null);
-INSERT INTO `users` (`id`, `username`, `is_admin`, `avatar`) VALUES (2, "IDandT", false, null);
-INSERT INTO `users` (`id`, `username`, `is_admin`, `avatar`) VALUES (3, "Troll", false, null);
+CREATE TABLE users (
+  id INT NOT NULL AUTO_INCREMENT,
+  username VARCHAR(20) NOT NULL UNIQUE,
+  password VARCHAR(60) NOT NULL,
+  admin TINYINT NOT NULL DEFAULT 0,
+  disabled TINYINT NOT NULL DEFAULT 0,
+  avatar VARCHAR(250) NULL DEFAULT NULL,
+  session_expires TIMESTAMP(3) NULL,
+  PRIMARY KEY (id));
+

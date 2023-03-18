@@ -6,7 +6,6 @@ export default function LocationHeader(props) {
       {props.path.map((part, index) => {
         return (
           <div key={index} className="location-part">
-            {'>>  '}
             {part}
           </div>
         )

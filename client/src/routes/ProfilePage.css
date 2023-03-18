@@ -1,0 +1,20 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  margin-bottom: 30px;
+  padding: 20px 30px 10px 30px;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: #111;
+}
+
+.profile-username {
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+.button-upload-avatar {
+  margin-top: 20px;
+}

@@ -26,6 +26,9 @@ export default function NewTopic(props) {
           maxLength="250"
         ></textarea>
       </div>
+      {props.errorMessage && (
+        <div className="topic-error-message">{props.errorMessage}</div>
+      )}
       <button
         type="button"
         onClick={() => props.handleNewTopic(title, description)}

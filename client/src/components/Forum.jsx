@@ -9,25 +9,35 @@ export default function Forum() {
   const [topicsData, setTopicsData] = useState(null)
   const [isNewTopicVisible, setIsNewTopicVisible] = useState(false)
   const [lastTopicID, setLastTopicID] = useState(0)
+  const [errorMessage, setErrorMessage] = useState(null)
 
   useEffect(() => {
     async function loadTopics() {
       const data = await getTopics()
 
-      setTopicsData(JSON.parse(data))
+      setTopicsData(JSON.parse(data.body.rows))
       setIsLoading(false)
     }
-
     loadTopics()
   }, [lastTopicID])
 
+  function toggleNewTopicVisible() {
+    setErrorMessage(null)
+    setIsNewTopicVisible(!isNewTopicVisible)
+  }
+
   async function handleNewTopic(title, description) {
     const res = await newTopic(title, description)
-    const id = res.id
-    // console.log('post id:  ', id)
-    setIsNewTopicVisible(false)
-    // lastPost is inside useEffect dependency array. This forces re-fetch thread
-    setLastTopicID(id)
+    console.log(res)
+    if (res.ok) {
+      setIsNewTopicVisible(false)
+      // lastTopic is inside useEffect dependency array. This forces re-fetch thread
+      console.log(res.body.id)
+      const id = res.body.id
+      setLastTopicID(id)
+    } else {
+      setErrorMessage(res.body.message)
+    }
   }
 
   if (isLoading) {
@@ -46,15 +56,15 @@ export default function Forum() {
           return <Topic key={topic.id} {...topic} />
         })}
       </div>
-      <button
-        type="button"
-        onClick={() => setIsNewTopicVisible(!isNewTopicVisible)}
-      >
+      <button type="button" onClick={() => toggleNewTopicVisible()}>
         Nuevo Tema
       </button>
       {isNewTopicVisible && (
         <div className="new-topic-editor">
-          <NewTopic handleNewTopic={handleNewTopic}></NewTopic>
+          <NewTopic
+            handleNewTopic={handleNewTopic}
+            errorMessage={errorMessage}
+          ></NewTopic>
         </div>
       )}
     </div>

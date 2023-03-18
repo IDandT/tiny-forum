@@ -21,6 +21,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 0px 0px 10px;
 }
 
 .user {
@@ -29,11 +30,8 @@
   align-items: center;
 }
 
-.user-avatar {
-  margin: 10px;
-}
-
 .user-name {
+  margin-left: 10px;
   font-weight: bolder;
 }
 

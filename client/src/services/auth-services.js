@@ -1,15 +1,23 @@
 const API_ENDPOINT = import.meta.env.VITE_API_ENDPOINT
 
-export async function getTopics() {
+// Call API method for signup, passing username and password
+export async function registerUser(user, pass) {
   try {
     const headersList = {
       Accept: '*/*',
       'User-Agent': 'Tiny Forum Frontend',
+      'Content-Type': 'application/json',
     }
 
-    const data = await fetch(`${API_ENDPOINT}/gettopics`, {
-      method: 'GET',
+    const bodyContent = JSON.stringify({
+      username: user,
+      password: pass,
+    })
+
+    const data = await fetch(`${API_ENDPOINT}/register`, {
+      method: 'POST',
       headers: headersList,
+      body: bodyContent,
     })
 
     const response = JSON.parse(await data.text())
@@ -21,7 +29,8 @@ export async function getTopics() {
   }
 }
 
-export async function newTopic(topicTitle, topicDescription) {
+// Call API method for login, passing username and password
+export async function loginUser(user, pass) {
   try {
     const headersList = {
       Accept: '*/*',
@@ -29,12 +38,15 @@ export async function newTopic(topicTitle, topicDescription) {
       'Content-Type': 'application/json',
     }
 
-    const params = { title: topicTitle, description: topicDescription }
+    const bodyContent = JSON.stringify({
+      username: user,
+      password: pass,
+    })
 
-    const data = await fetch(`${API_ENDPOINT}/newtopic`, {
-      method: 'PUT',
+    const data = await fetch(`${API_ENDPOINT}/login`, {
+      method: 'POST',
       headers: headersList,
-      body: JSON.stringify(params),
+      body: bodyContent,
     })
 
     const response = JSON.parse(await data.text())

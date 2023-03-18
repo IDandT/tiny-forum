@@ -1,0 +1,32 @@
+.profile-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 5px;
+  margin: 0px;
+  padding: 0px;
+  align-items: center;
+}
+
+.profile-bar h4 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.profile-bar-title {
+  display: flex;
+}
+
+.profile-bar-user {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+}
+
+.profile-bar-user:hover {
+  background-color: #1675bc;
+  border-radius: 5px;
+}

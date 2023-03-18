@@ -1,14 +1,14 @@
 import './Post.css'
 import HTMLReactParser from 'html-react-parser'
 import 'react-quill/dist/quill.core.css'
-import imgAvatar from '../assets/default-avatar.png'
+import Avatar from './Avatar.jsx'
 
 export default function Post(props) {
   return (
     <div className="post">
       <div className="topbar simple-linear">
         <div className="user">
-          <img className="user-avatar" src={imgAvatar} width="48" height="48" />
+          <Avatar imageURL={props.avatar} imageWidth={48} imageHeight={48} />
           <div className="user-name">{props.username}</div>
         </div>
         <div className="datetime">

@@ -23,5 +23,6 @@ module.exports = {
   rules: {
     'no-unused-vars': ['warn'],
     'react/prop-types': ['off'],
+    'prefer-promise-reject-errors': ['off'],
   },
 }

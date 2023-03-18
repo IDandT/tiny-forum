@@ -50,6 +50,9 @@ export default function QuillEditor(props) {
         modules={modules}
         formats={formats}
       ></ReactQuill>
+      {props.errorMessage && (
+        <div className="post-error-message">{props.errorMessage}</div>
+      )}
       <button
         className="qre-button"
         type="button"

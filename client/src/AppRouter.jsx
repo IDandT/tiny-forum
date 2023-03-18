@@ -1,17 +1,27 @@
-import {
-  createBrowserRouter,
-  RouterProvider,
-  // Outlet,
-  Navigate,
-} from 'react-router-dom'
+import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom'
 
+import LoginPage from './routes/LoginPage.jsx'
+import RegisterPage from './routes/RegisterPage.jsx'
 import ForumPage from './routes/ForumPage.jsx'
 import ThreadPage from './routes/ThreadPage.jsx'
+import ProfilePage from './routes/ProfilePage.jsx'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Navigate to="/home" />,
+    element: <Navigate to="/login" />,
+  },
+  {
+    path: '/login',
+    element: <LoginPage />,
+  },
+  {
+    path: '/register',
+    element: <RegisterPage />,
+  },
+  {
+    path: '/profile',
+    element: <ProfilePage />,
   },
   {
     path: '/home',
