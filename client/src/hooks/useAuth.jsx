@@ -82,8 +82,9 @@ export function AuthProvider({ children, storageType }) {
           id: loginResponse.body.id,
           message: loginResponse.body.message,
           username: loginResponse.body.username,
+          admin: loginResponse.body.admin,
+          disabled: loginResponse.body.disabled,
           expiration: loginResponse.body.expiration,
-          // avatarpaht: loginResponse.body.avatarpath,
           avatar: loginResponse.body.avatar,
         }
 

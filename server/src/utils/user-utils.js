@@ -26,6 +26,8 @@ async function checkUserLogin(data, password) {
           message: 'Login correcto',
           id: userInfo.id,
           username: userInfo.username ?? '',
+          admin: userInfo.admin,
+          disabled: userInfo.disabled,
           expiration: userInfo.session_expires ?? 0,
           avatar: userInfo.avatar ?? '',
           avatarurl: process.env.AVATAR_URL,

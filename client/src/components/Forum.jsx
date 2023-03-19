@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react'
+import { useAuth } from '../hooks/useAuth.jsx'
 import { getTopics, newTopic } from '../services/topic-services.js'
-import './Forum.css'
 import NewTopic from './NewTopic.jsx'
 import Topic from './Topic.jsx'
+import './Forum.css'
 
 export default function Forum() {
   const [isLoading, setIsLoading] = useState(true)
@@ -10,6 +11,7 @@ export default function Forum() {
   const [isNewTopicVisible, setIsNewTopicVisible] = useState(false)
   const [lastTopicID, setLastTopicID] = useState(0)
   const [errorMessage, setErrorMessage] = useState(null)
+  const { user } = useAuth()
 
   useEffect(() => {
     async function loadTopics() {
@@ -56,9 +58,11 @@ export default function Forum() {
           return <Topic key={topic.id} {...topic} />
         })}
       </div>
-      <button type="button" onClick={() => toggleNewTopicVisible()}>
-        Nuevo Tema
-      </button>
+      {Boolean(user.admin) && (
+        <button type="button" onClick={() => toggleNewTopicVisible()}>
+          Nuevo Tema
+        </button>
+      )}
       {isNewTopicVisible && (
         <div className="new-topic-editor">
           <NewTopic
