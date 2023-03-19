@@ -1,5 +1,5 @@
 USE idandt_tinyforum;
-START TRANSACTION;
+
 DROP PROCEDURE IF EXISTS usp_TopicGet;
 
 DELIMITER $$
@@ -26,6 +26,6 @@ BEGIN
         topics.title,
         IFNULL(topics.description, "");
 
-END $$
+END$$
 
 DELIMITER ;
