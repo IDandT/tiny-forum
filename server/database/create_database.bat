@@ -20,6 +20,10 @@ echo CREATING TABLES
 %mysqlpath% -h %host% -u %user% -p%pass% < scripts\topics.sql
 echo:
 
+echo CREATING ADMIN USER AND DUMMY DATA
+%mysqlpath% -h %host% -u %user% -p%pass% < scripts\data.sql
+echo:
+
 echo CREATING STORED PROCEDURES
 %mysqlpath% -h %host% -u %user% -p%pass% < procs\usp_PostGet.sql
 %mysqlpath% -h %host% -u %user% -p%pass% < procs\usp_PostNew.sql

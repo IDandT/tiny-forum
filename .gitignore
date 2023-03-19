@@ -31,3 +31,4 @@ server/avatars/*
 
 #file exception
 !.gitkeep
+create_database_prod.bat

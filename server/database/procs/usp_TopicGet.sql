@@ -1,5 +1,5 @@
 USE idandt_tinyforum;
-
+START TRANSACTION;
 DROP PROCEDURE IF EXISTS usp_TopicGet;
 
 DELIMITER $$
@@ -24,8 +24,8 @@ BEGIN
     GROUP BY
         topics.id,
         topics.title,
-        topics.description;
+        IFNULL(topics.description, "");
 
-END$$
+END $$
 
 DELIMITER ;
