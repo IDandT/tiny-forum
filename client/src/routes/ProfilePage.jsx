@@ -15,13 +15,9 @@ export default function ProfilePage() {
   const [imageURL, setImageURL] = useState()
   const navigate = useNavigate()
 
-  // Checks if user is authenticated and redirects to login
+  // Load avatar image
   useEffect(() => {
-    if (!user) {
-      navigate('/login')
-    } else {
-      setImageURL(user.avatar)
-    }
+    setImageURL(user.avatar)
   }, [user])
 
   // If user press logout button, close session calling logout

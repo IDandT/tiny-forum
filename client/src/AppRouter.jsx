@@ -1,10 +1,10 @@
 import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom'
-
 import LoginPage from './routes/LoginPage.jsx'
 import RegisterPage from './routes/RegisterPage.jsx'
 import ForumPage from './routes/ForumPage.jsx'
 import ThreadPage from './routes/ThreadPage.jsx'
 import ProfilePage from './routes/ProfilePage.jsx'
+import PrivateRoute from './components/PrivateRoute.jsx'
 
 const router = createBrowserRouter([
   {
@@ -21,15 +21,27 @@ const router = createBrowserRouter([
   },
   {
     path: '/profile',
-    element: <ProfilePage />,
+    element: (
+      <PrivateRoute>
+        <ProfilePage />
+      </PrivateRoute>
+    ),
   },
   {
     path: '/home',
-    element: <ForumPage />,
+    element: (
+      <PrivateRoute>
+        <ForumPage />
+      </PrivateRoute>
+    ),
   },
   {
     path: '/thread/:idthread/:title',
-    element: <ThreadPage />,
+    element: (
+      <PrivateRoute>
+        <ThreadPage />
+      </PrivateRoute>
+    ),
   },
 ])
 
