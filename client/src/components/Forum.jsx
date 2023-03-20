@@ -52,7 +52,7 @@ export default function Forum() {
         <div className="forum-topic-list-header forum-topic-row">
           <div className="forum-topic-col-1">Tema</div>
           <div className="forum-topic-col-2">Mensajes</div>
-          <div className="forum-topic-col-2">Ultimo Post </div>
+          <div className="forum-topic-col-2">Ultimo Post</div>
         </div>
         {topicsData.map((topic) => {
           return <Topic key={topic.id} {...topic} />
