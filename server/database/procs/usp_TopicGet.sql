@@ -14,7 +14,7 @@ BEGIN
         IFNULL(COUNT(posts.id), 0) AS msgcount,
         DATE_FORMAT(MAX(posts.created), "%d/%m/%Y") AS last_date,
         DATE_FORMAT(MAX(posts.created), "%H:%i:%S") AS last_time,
-        IFNULL(users.username, "") AS lastpostby
+        ANY_VALUE(IFNULL(users.username, "")) AS lastpostby
     FROM 
         topics
     LEFT JOIN 
