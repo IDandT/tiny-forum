@@ -127,22 +127,22 @@ You can also run the client and server separately using the running script in co
 ## Screenshots
 
 <p align="center">
-Login page
+Login page <br />
 <img  src="media/forum1.png" width="300px"/>
 </p>
 
 <p align="center">
-Thread page
+Thread page <br />
 <img  src="media/forum2.png" width="300px"/>
 </p>
 
 <p align="center">
-Richt format WYSIWYG post editor
+Richt format WYSIWYG post editor <br />
 <img  src="media/forum3.png" width="300px"/>
 </p>
 
 <p align="center">
-Profile page (avatar update and logout)
+Profile page (avatar update and logout) <br />
 <img  src="media/forum5.png" width="300px"/>
 </p>
 
