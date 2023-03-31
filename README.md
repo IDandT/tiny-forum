@@ -5,12 +5,12 @@
 1. [Description](#description)
 2. [Features](#features)
 3. [Tools](#tools)
-4. [Tech Stack](#tech-stack)
+4. [Tech Stack](#tech-stack)</br>
    4.1. [Client](#client)</br>
    4.2. [Server](#server)</br>
    4.3. [Others](#others)</br>
 5. [Deployment](#deployment)
-6. [Environment Variables](#environment-variables)
+6. [Environment Variables](#environment-variables)</br>
    6.1. [Client](#client-1)</br>
    6.2. [Server](#server-1)</br>
 7. [Run project](#run-project)
