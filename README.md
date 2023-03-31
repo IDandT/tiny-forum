@@ -20,10 +20,14 @@ Basic implemented features:
 - MySQL database
 
 <p align="center">
-<img  src="media/forum1.png"/>
-<img  src="media/forum2.png"/>
-<img  src="media/forum3.png"/>
-<img  src="media/forum5.png"/>
+<tr>
+<td valign="top"><img  src="media/forum1.png"/></td>
+<td valign="top"><img  src="media/forum2.png"/></td>
+</tr>
+<tr>
+<td valign="top"><img  src="media/forum3.png"/></td>
+<td valign="top"><img  src="media/forum5.png"/></td>
+</tr>
 </p>
 
 ## Tools
