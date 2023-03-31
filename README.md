@@ -2,19 +2,19 @@
 
 ## Table of contents
 
-1. [Description](#desc)
-2. [Features](#feat)
+1. [Description](#description)
+2. [Features](#features)
 3. [Tools](#tools)
-4. [Tech Stack](#tech)
-   4.1. [Client](#tech-client)
-   4.2. [Server](#tech-server)
-   4.3. [Others](#tech-others)
-5. [Deployment](#usage)
-6. [Environment Variables](#env)
-   6.1. [Client](#env-client)
-   6.2. [Server](#env-server)
-7. [Run project](#run)
-8. [Screenshots](#screens)
+4. [Tech Stack](#tech-stack)
+   4.1. [Client](#client)
+   4.2. [Server](#server)
+   4.3. [Others](#others)
+5. [Deployment](#deployment)
+6. [Environment Variables](#environment-variables)
+   6.1. [Client](#client-1)
+   6.2. [Server](#server-1)
+7. [Run project](#run-project)
+8. [Screenshots](#screenshots)
 
 ## Description
 
