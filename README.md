@@ -21,12 +21,12 @@ Basic implemented features:
 
 <p align="center">
 <tr>
-<td valign="top"><img  src="media/forum1.png" width="200"/></td>
-<td valign="top"><img  src="media/forum2.png" width="200"/></td>
+<td valign="top"><img  src="media/forum1.png" width="200px"/></td>
+<td valign="top"><img  src="media/forum2.png" width="200px"/></td>
 </tr>
 <tr>
-<td valign="top"><img  src="media/forum3.png" width="200"/></td>
-<td valign="top"><img  src="media/forum5.png" width="200"/></td>
+<td valign="top"><img  src="media/forum3.png" width="200px"/></td>
+<td valign="top"><img  src="media/forum5.png" width="200px"/></td>
 </tr>
 </p>
 
