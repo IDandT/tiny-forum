@@ -1,5 +1,23 @@
 # Tiny Forum
 
+## Table of contents
+
+1. [Description](#desc)
+2. [Features](#feat)
+3. [Tools](#tools)
+4. [Tech Stack](#tech)
+   4.1. [Client](#tech-client)
+   4.2. [Server](#tech-server)
+   4.3. [Others](#tech-others)
+5. [Deployment](#usage)
+6. [Environment Variables](#env)
+   6.1. [Client](#env-client)
+   6.2. [Server](#env-server)
+7. [Run project](#run)
+8. [Screenshots](#screens)
+
+## Description
+
 A very light and simple forum programmed with React for learning pourposes only.
 
 The idea was to create a basic forum structure using as few dependencies as possible.
@@ -27,18 +45,18 @@ Basic implemented features:
 
 ## Tech Stack
 
-**Client:**
+### Client
 
 - Vite + React
 - Quill (for text editor)
 
-**Server:**
+### Server
 
 - Node
 - Express
 - MySql2
 
-**Others:**
+### Others
 
 - Multer (upload avatars)
 - Bcrypt (password hashing)
